@@ -1,7 +1,25 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FeedBack\src\app\app.component.ts" />
+    <None Remove="FeedBack\src\app\app.module.ts" />
+    <None Remove="FeedBack\src\main.ts" />
+    <None Remove="FeedBack\src\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="FeedBack\src\app\app.component.ts" />
+    <TypeScriptCompile Include="FeedBack\src\app\app.module.ts" />
+    <TypeScriptCompile Include="FeedBack\src\main.ts" />
+    <TypeScriptCompile Include="FeedBack\src\polyfills.ts" />
+  </ItemGroup>
 
 </Project>
