@@ -5,7 +5,7 @@
   "author": "SofiFairyTell <https://github.com/SofiFairyTell>",
   "scripts": {
     "ng": "ng",
-    "start": "echo hello && ng serve",
+    "start": "echo Starting... && ng serve",
     "build": "ng build"
   },
   "dependencies": {
