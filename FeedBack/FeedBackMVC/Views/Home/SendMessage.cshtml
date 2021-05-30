@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Отправка сообщений</title>
+</head>
+<body>
+    <div>
+        <h3>Форма оформления покупки</h3>
+        <p>Для оформления покупки заполните следующие поля:</p>
+        <form method="post">
+            <input type="hidden" value="@ViewBag.UserId" name="Id" />
+            <table>
+                <tr>
+                    <td>Имя:</td>
+                    <td><input type="text" name="User_name" /> </td>
+                </tr>
+                <tr>
+                    <td>Почта:</td>
+                    <td><input type="text" name="User_mail" /></td>
+                </tr>
+                <tr>
+                    <td>Телефон:</td>
+                    <td><input type="text" name="User_phone" /></td>
+                </tr>
+                <tr>
+                    <td>Тема сообщения:</td>
+                    <td><input type="text" name="Message_theme" /></td>
+                </tr>
+                <tr>
+                    <td>Сообщение:</td>
+                    <td><input type="text" name="Message_text" /></td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
