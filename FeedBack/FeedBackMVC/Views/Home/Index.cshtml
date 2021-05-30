@@ -1,8 +1,33 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<FeedBackMVC.Models.User>
+@{
+    //ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Информация о клиентах</title>
+</head>
+<body>
+    <h3>Клиенты</h3>
+    <table>
+        <tr>
+            <td>Имя</td>
+            <td>Почта</td>
+            <td>Телефон</td>
+            <td></td>
+        </tr>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.User_name</td>
+                <td>@user.User_mail</td>
+                <td>@user.User_phone</td>
+                <td><a href="~/Home/find/@user.Id">Найти письма</a></td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

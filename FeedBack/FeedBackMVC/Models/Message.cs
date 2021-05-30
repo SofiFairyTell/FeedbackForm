@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 namespace FeedBackMVC.Models
 {
     public class Message
-    {
-        public int User_id { get; set; } // foreigh key
-        public int  Message_id { get; set; }
+    {    
+        public int  Id { get; set; }
         public string Message_theme { get; set; }
-
         public string Message_text { get; set; }
+        public int User_id { get; set; } // foreigh key
+        public User User { get; set; }
 
     }
 }

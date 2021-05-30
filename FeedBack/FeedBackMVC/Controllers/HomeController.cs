@@ -11,27 +11,16 @@ namespace FeedBackMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        Models.MessageStoreContext dataContext;
+        public HomeController(MessageStoreContext context)
         {
-            _logger = logger;
+            //конструктор для получения данных
+            dataContext = context;
         }
-
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            //генерация представления: получаем все объекты из БД в виде списка
+            return View(dataContext.Users.ToList());
         }
     }
 }

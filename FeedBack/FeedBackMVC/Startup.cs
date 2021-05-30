@@ -22,6 +22,8 @@ namespace FeedBackMVC
         public void ConfigureServices(IServiceCollection services)
         {
             string connection = Configuration.GetConnectionString("DefaultConnection");
+            //контекст бд был добавлен в качестве сервиса, поэтому через конструктор в HomeController 
+            // будем получать информацию из бд?
             services.AddDbContext<Models.MessageStoreContext>(DbContextOptions => DbContextOptions.UseSqlServer(connection));
             services.AddControllersWithViews();
         }
