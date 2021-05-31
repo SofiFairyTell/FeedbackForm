@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedBackAngular", "FeedBackAngular.csproj", "{B6A77FC5-F960-4B3B-866D-09BF973091CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6A77FC5-F960-4B3B-866D-09BF973091CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A77FC5-F960-4B3B-866D-09BF973091CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A77FC5-F960-4B3B-866D-09BF973091CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A77FC5-F960-4B3B-866D-09BF973091CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9A2A17D-1B2C-4FF6-A496-7635512E3800}
+	EndGlobalSection
+EndGlobal
