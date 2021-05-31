@@ -34,16 +34,21 @@ namespace FeedBackMVC.Controllers
         }
 
         [HttpPost]
-        public string SendMessage(Message message, User user)
+        public string Send(Message message, User user)
         {
-            dataContext.Users.Add(user);
-            if(message.User == null)
-            {
-                message.User.User_name = user.User_name;
-                message.User.Id = user.Id;
-            }
-            dataContext.Messages.Add(message);
-            dataContext.SaveChangesAsync();
+            //user.Id = 4;
+            // dataContext.Users.Add(user);
+            //Message mess = new Message();
+            //mess.UserId = user.Id;
+            //mess.Message_text = message.Message_text;
+            //mess.Message_theme = message.Message_theme;
+            //mess.User = user;
+            //if(message.User == null)
+            //{
+            //    message.User = user;
+            //}
+            var data =  dataContext.Messages.Add(message);
+            dataContext.SaveChanges();
             return "Ваше сообщение"+ message.User.User_name +"отправлено";
         }
     }

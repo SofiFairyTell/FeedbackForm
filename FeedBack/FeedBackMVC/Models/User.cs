@@ -7,7 +7,7 @@ namespace FeedBackMVC.Models
 {
     public class User
     {
-        public int Id { get; set; }
+        public int Id { private set; get; }
         public string User_name { get; set; }
         public string User_mail { get; set; }
         public string User_phone { get; set; }
