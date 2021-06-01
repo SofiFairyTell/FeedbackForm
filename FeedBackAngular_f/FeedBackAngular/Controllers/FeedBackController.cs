@@ -11,10 +11,10 @@ namespace FeedBackAngular.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class HomeController : Controller
+    public class FeedBackController : Controller
     {
         private readonly Models.MessageStoreContext _context;
-        public HomeController(MessageStoreContext context)
+        public FeedBackController(MessageStoreContext context)
         {
             //конструктор для получения данных
             _context = context;

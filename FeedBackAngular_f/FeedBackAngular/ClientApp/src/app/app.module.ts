@@ -5,7 +5,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
+
 import { FeedBackComponent } from './FeedBack/FeedBack.component';
 
 
@@ -22,7 +22,7 @@ import { RecaptchaModule, RecaptchaFormsModule, RecaptchaLoaderService, RECAPTCH
 @NgModule({
   declarations: [
     AppComponent,
-    NavMenuComponent,
+
     FeedBackComponent
   ],
   imports: [
