@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace FeedBackAngular.Models
 {
+    //Таблица объединяющая сообщения от пользователей и самих пользователей
     public class UserMessage
     {
             public int UserMessageId { get; set; }

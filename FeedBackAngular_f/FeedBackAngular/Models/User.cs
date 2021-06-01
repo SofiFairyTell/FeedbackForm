@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace FeedBackAngular.Models
 {
+    //Таблица пользователей
     public class User
     {
         public int Id { private set; get; }

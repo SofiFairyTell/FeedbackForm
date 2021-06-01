@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
+import { FeedBackComponent } from './FeedBack/FeedBack.component';
 
 
 import { NgxMaskModule } from "ngx-mask";
@@ -23,7 +23,7 @@ import { RecaptchaModule, RecaptchaFormsModule, RecaptchaLoaderService, RECAPTCH
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent
+    FeedBackComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -42,7 +42,7 @@ import { RecaptchaModule, RecaptchaFormsModule, RecaptchaLoaderService, RECAPTCH
     RecaptchaModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' }
+      { path: '', component: FeedBackComponent, pathMatch: 'full' }
     ])
     //RouterModule.forRoot(appRoutes)
   ],
